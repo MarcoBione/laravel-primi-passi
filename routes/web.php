@@ -14,10 +14,33 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    $links = [
+        'Home' => '/',
+        'links' => '/link',
+        'About Us' => '/about'
+    ];
     return view('welcome', ['program' => 'laravel!']);
 });
 
 Route::get('/links', function () {
+    $links = [
+        'Home' => '/',
+        'links' => '/link',
+        'About Us' => '/about'
+    ];
+
     return view('link', ['program' => 'laravel!']);
 });
+
+Route::get('/about', function () {
+    $links = [
+        'Home' => '/',
+        'links' => '/link',
+        'About Us' => '/about'
+    ];
+
+    return view('link', ['program' => 'laravel!']);
+});
+
+
 

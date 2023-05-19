@@ -42,8 +42,9 @@
 
     <main>
         <hr>
-        <p>Docs link</p>
-        <a href="/links" class="_links">Scopri il link per la documentazione ufficiale -></a>
+        @foreach ($links as $link)
+            <li>{{ $links }}</li>
+        @endforeach
         <hr>
     </main>
 
