@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome', ['program' => 'laravel!']);
 });
 
 Route::get('/links', function () {
-    return view('link');
+    return view('link', ['program' => 'laravel!']);
 });
 

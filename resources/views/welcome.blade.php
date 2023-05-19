@@ -37,7 +37,7 @@
 <body class="antialiased">
 
     <header>
-        <h1>Hello Laravel!</h1>
+        <h1>Hello, {{ $program }}</h1>
     </header>
 
     <main>
