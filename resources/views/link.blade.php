@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Laravel links</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -30,6 +30,13 @@
         ._links {
             color: red;
         }
+
+        small,
+        hr {
+            color: white;
+            opacity: 50%;
+            display: block;
+        }
     </style>
 
 </head>
@@ -41,10 +48,17 @@
     </header>
 
     <main>
+        <div>
+            <p>Ecco il link!</p>
+            <small>vai alla pagina ufficiale di laravel</small>
+            <a class="_links" href="https://laravel.com/">---> link ufficiale ---></a>
+        </div>
         <hr>
-        <p>Docs link</p>
-        <a href="/links" class="_links">Scopri il link per la documentazione ufficiale -></a>
-        <hr>
+        <div>
+            <a class="_links" href="/">
+                <--- Torna alla home! <---</a>
+        </div>
+
     </main>
 
 </body>
